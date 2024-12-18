@@ -1,0 +1,15 @@
+VSCode のカラーテーマを編集するウェブアプリをつくる。
+
+1. golangでechoを使ったウェブサーバ。
+
+GET /load/settings.json
+VSCode の設定ファイル(settings.json)をレスポンスとして返す。
+
+POST /save/settings.json
+jsonをリクエストとして取り
+VSCode の設定ファイル(settings.json)に書き込む。
+
+2. html画面
+外部ライブラリは使わない。
+
+/load/settings.json で取得した settings.json から色定義に関わる文をリストアップし、それぞれのカラーコードを編集する。`
